@@ -2,6 +2,7 @@
 let country=document.querySelector('#country');
 let state=document.querySelector('#state');
 let clgName=document.querySelector('#clgName');
+let h2=document.querySelector('h2');
  let url='http://universities.hipolabs.com/search?country=';  
 country.addEventListener('change',async ()=>{
         state.value='';
@@ -27,7 +28,7 @@ async function getInfo(){
 }
 let list=document.querySelector('#list');
 function display(infoArr){
-      
+    h2.innerText='University Search';
     list.innerText='';
     for(arr of infoArr){
        let li= document.createElement('li');
