@@ -1,0 +1,34 @@
+input{
+    padding: 10px 14px;
+    width: 400px;
+    max-width: 90%;
+    /* height: 1.5rem; */
+    margin: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+  border-radius: 8px;
+ will-change: transform;
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+
+
+}
+input:hover {
+  border-color: #888;
+}
+.search-box{
+  display: inline-block;
+}
+input:focus{
+    background-color: lightblue;
+    transform: scale(1.05); /* 👈 comes towards screen */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+
+  outline: none;
+}
+li{
+    font-size: 1.3rem;
+}
